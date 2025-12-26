@@ -1,3 +1,5 @@
+    import Image from "next/image";
+
     import { motion } from "framer-motion";
 export default function Hero() {
   return (
@@ -61,10 +63,19 @@ export default function Hero() {
 
         {/* Placeholder for hero image */}
         <div className="mt-20">
-          <div className="relative mx-auto max-w-3xl aspect-video bg-secondary/50 rounded-xl border border-border overflow-hidden">
-            <div className="w-full h-full flex items-center justify-center">
-              <span className="text-muted-foreground">Your Software Solutions</span>
-            </div>
+          <div className="relative mx-auto  aspect-video bg-secondary/50 rounded-xl border border-border overflow-hidden">
+            
+  <div className="relative mx-auto  aspect-video rounded-xl border border-border overflow-hidden">
+    <Image
+      src="/images/hero.jpg"
+      alt="Your Software Solutions"
+      fill
+      priority
+      className="object-cover"
+    />
+  </div>
+
+
           </div>
         </div>
       </div>
