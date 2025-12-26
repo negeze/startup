@@ -1,30 +1,36 @@
+import Image from "next/image"
 export default function Projects() {
   const projects = [
     {
       title: "E-Commerce Platform",
-      description: "A scalable e-commerce platform that enables users to browse products and place orders.",
-      tech: ["Next/TypeScript", "Laravel", "Mysqul"],
-      image: "placeholder",
+      description:
+        "A scalable e-commerce platform that enables users to browse products and place orders.",
+      tech: ["Next/TypeScript", "Laravel", "MySQL"],
+      image: "/images/quickshop_1.png",
     },
     {
-      title: "Healthcare platform",
-      description: "The platform is used for patient management and appointment scheduling.",
-      tech: [ "Laravel", "PostgreSQL", "React/TypeScript"],
-      image: "placeholder",
+      title: "Healthcare Platform",
+      description:
+        "The platform is used for patient management and appointment scheduling.",
+      tech: ["Laravel", "PostgreSQL", "React/TypeScript"],
+      image: "/images/healthcare.png",
     },
     {
-      title: "social media management platform",
-      description: "A smart social media management platform that allows users to create, schedule, and publish content across multiple social networks from one dashboard.",
+      title: "Social Media Management Platform",
+      description:
+        "A smart social media management platform that allows users to create, schedule, and publish content across multiple social networks from one dashboard.",
       tech: ["Next.js", "PostgreSQL", "Laravel", "Tailwind"],
-      image: "placeholder",
+      image: "/images/quickpost.png",
     },
     {
-      title: "Child care Web App",
-      description: "A modern child care web app that helps parents and caregivers manage child profiles, schedules, and daily activities in one secure platform.",
-      tech: ["Larave", "", "FastAPI", "PostgreSQL","Next js"],
-      image: "placeholder",
+      title: "Child Care Web App",
+      description:
+        "A modern child care web app that helps parents and caregivers manage child profiles, schedules, and daily activities in one secure platform.",
+      tech: ["Laravel", "FastAPI", "PostgreSQL", "Next.js"],
+      image: "/images/childcare.png",
     },
-  ]
+  ];
+
 
   return (
     <section id="projects" className="py-20 bg-card">
@@ -45,11 +51,15 @@ export default function Projects() {
               className="group overflow-hidden rounded-xl border border-border hover:border-primary/50 transition-all duration-300"
             >
               {/* Project Image */}
-              <div className="aspect-video bg-secondary/50 overflow-hidden relative">
-                <div className="w-full h-full flex items-center justify-center text-muted-foreground group-hover:bg-secondary/70 transition-colors">
-                  {project.image}
-                </div>
+              <div className="aspect-video overflow-hidden relative">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
+
 
               {/* Project Info */}
               <div className="p-6 bg-background">
