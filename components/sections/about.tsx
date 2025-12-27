@@ -3,12 +3,25 @@ export default function About() {
     <section id="about" className="py-20 bg-card">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Left side - Image placeholder */}
-          <div className="relative">
-            <div className="aspect-square bg-secondary/50 rounded-xl border border-border overflow-hidden flex items-center justify-center">
-              <span className="text-muted-foreground">Our Team</span>
-            </div>
-          </div>
+ {/* Left side - Image with hover animation */}
+<div className="relative group w-full max-w-sm">
+  <div className="aspect-square rounded-xl border border-border overflow-hidden">
+    {/* Image */}
+    <img
+      src="/images/team.jpg"
+      alt="Our Team"
+      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+    />
+
+    {/* Overlay */}
+    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+      <span className="text-white text-xl font-semibold tracking-wide">
+        Our Team
+      </span>
+    </div>
+  </div>
+</div>
+
 
           {/* Right side - Content */}
           <div className="space-y-6">
