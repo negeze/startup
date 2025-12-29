@@ -58,7 +58,7 @@ export default function Contact() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="NexEthTech@email.com"
+              placeholder="NextEthTech@gmail.com"
               className="w-full px-4 py-2 bg-secondary/50 border border-border rounded-lg focus:outline-none focus:border-primary transition-colors"
               required
             />

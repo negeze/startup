@@ -8,7 +8,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "NexEthi-Tech- Software Development Company",
+  title: "NextEthi-Tech- Software Development Company",
   description: "Professional software development solutions and services",
   generator: "Welcome to NexEthi Tech",
   icons: {

@@ -27,7 +27,7 @@ export default function About() {
           <div className="space-y-6">
             <div>
               <h2 className="text-4xl font-bold mb-4">
-                About <span className="text-primary">NexEthi Tec</span>
+                About <span className="text-primary">NextEthi Tec</span>
               </h2>
               <p className="text-muted-foreground leading-relaxed">
                 Since 2022, we've been committed to delivering exceptional software development services. Our team of

@@ -11,7 +11,7 @@ export default function Footer() {
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <span className="text-primary-foreground font-bold">T</span>
               </div>
-              <span className="font-bold text-primary">NexEthi Tech</span>
+              <span className="font-bold text-primary">NextEthi Tech</span>
             </div>
             <p className="text-sm text-muted-foreground">Building innovative software solutions for the digital era.</p>
           </div>
@@ -100,7 +100,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-border pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-muted-foreground">
-          <p>&copy; {currentYear} NexEthi Tech. All rights reserved.</p>
+          <p>&copy; {currentYear} NextEthi Tech. All rights reserved.</p>
           <div className="flex gap-6 mt-4 sm:mt-0">
             <a href="#" className="hover:text-primary transition-colors">
               Privacy Policy

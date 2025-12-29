@@ -30,7 +30,7 @@ export default function Navigation({ isDark, toggleTheme }: NavigationProps) {
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">T</span>
             </div>
-            <span className="text-xl font-bold text-primary hidden sm:inline">NexEthi Tech</span>
+            <span className="text-xl font-bold text-primary hidden sm:inline">NextEthi Tech</span>
           </Link>
 
           {/* Desktop Navigation */}
